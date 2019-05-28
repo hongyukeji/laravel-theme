@@ -35,6 +35,12 @@ public function index()
     return view('frontend::index.index');
 }
 
+// 3. 在视图目录新建frontend目录和对应的index:
+resources/views/frontend
+resources/views/frontend/default
+resources/views/frontend/default/index
+resources/views/frontend/default/index/index.blade.php
+
 ```
 
 ### templates 配置说明
