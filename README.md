@@ -43,7 +43,7 @@ public function index()
 - template 为使用模板的目录
 - template_default 为默认模板目录, 即找不到template模板对应的目录文件, 会自动在该参数定义的目录去查找
 
-### 两个助手函数你可能会需要
+### 助手函数你可能会需要
 
 - get_template_dir 获取给定目录下的所有目录
 
