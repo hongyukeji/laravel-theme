@@ -45,8 +45,7 @@ public function index()
 
 ### 两个助手函数你可能会需要
 
-- get_template_dir 获取给定目录下的网站模板
-- get_template 获取给定目录下的模板主题
+- get_template_dir 获取给定目录下的所有目录
 
 ## Contributing
 
