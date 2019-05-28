@@ -1,0 +1,27 @@
+{
+    "name": "hongyukeji/laravel-theme",
+    "description": "Laravel theme.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shadow",
+            "email": "admin@hongyuvip.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hongyukeji\\LaravelTheme\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hongyukeji\\LaravelTheme\\ThemeServiceProvider"
+            ]
+        }
+    }
+}
