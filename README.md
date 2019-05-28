@@ -37,7 +37,7 @@ public function index()
 
 ```
 
-### 名词解析
+### templates 配置说明
 
 - path_prefix 为每个终端模板目录路径
 - template 为使用模板的目录
@@ -45,7 +45,7 @@ public function index()
 
 ### 助手函数你可能会需要
 
-- get_template_dir 获取给定目录下的所有目录
+- get_template_dir 获取给定路径下的所有目录
 
 ## Contributing
 

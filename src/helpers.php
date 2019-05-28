@@ -2,7 +2,7 @@
 
 if (!function_exists('get_template_dir')) {
     /**
-     * 获取给定目录下的所有目录
+     * 获取给定路径下的所有目录
      *
      * @param $path
      * @param array $excludes
