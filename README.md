@@ -22,7 +22,7 @@ $ php artisan vendor:publish --provider=Hongyukeji\\LaravelTheme\\ThemeServicePr
 ### 使用
 
 ```
-// 1. 在 config/themes.php 中 添加 namespaces, 如:
+// 1. 在 config/themes.php 中 添加 templates, 如:
 'frontend' => [
     'path_prefix' => 'resources/views/frontend/',
     'template' => 'default',

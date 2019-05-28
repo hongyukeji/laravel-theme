@@ -14,7 +14,7 @@
  */
 
 return [
-    'namespaces' => [
+    'templates' => [
         'frontend' => [
             'path_prefix' => 'resources/views/frontend/',
             'template' => 'default',

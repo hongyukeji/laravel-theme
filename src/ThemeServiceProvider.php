@@ -31,7 +31,7 @@ class ThemeServiceProvider extends ServiceProvider
             __DIR__ . '/../config/themes.php', 'themes'
         );
 
-        $themes = config('themes.namespaces');
+        $themes = config('themes.templates');
 
         try {
             foreach ($themes as $key => $theme) {
