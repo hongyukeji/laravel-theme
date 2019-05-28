@@ -35,7 +35,7 @@ public function index()
     return view('frontend::index.index');
 }
 
-// 3. 在视图目录新建frontend目录和对应的index:
+// 3. 在视图目录新建frontend目录和对应的index(frontend => 终端, default => 主题):
 resources/views/frontend
 resources/views/frontend/default
 resources/views/frontend/default/index
