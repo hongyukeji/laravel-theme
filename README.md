@@ -1,6 +1,6 @@
 <h1 align="center"> laravel-theme </h1>
 
-<p align="center"> Laravel 主题模板功能, 文档写得不清楚的地方可以直接去看代码</p>
+<p align="center"> Laravel 优雅的主题模板功能, 文档写得不清楚的地方可以直接去看代码</p>
 
 
 ## Installing
