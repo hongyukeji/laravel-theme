@@ -35,10 +35,11 @@ class ThemeServiceProvider extends ServiceProvider
 
         try {
             foreach ($themes as $key => $theme) {
+                $path_prefix = str_finish($theme['path_prefix'], '/');
                 // 默认主题模板
-                View::addNamespace($key, base_path($theme['path_prefix'] . $theme['template_default']));
+                View::addNamespace($key, base_path($path_prefix . $theme['template_default']));
                 // 当前主题模板
-                View::prependNamespace($key, base_path($theme['path_prefix'] . $theme['template']));
+                View::prependNamespace($key, base_path($path_prefix . $theme['template']));
             }
         } catch (\Exception $e) {
             throw new \Exception($e->getMessage());

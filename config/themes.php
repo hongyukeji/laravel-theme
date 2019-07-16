@@ -1,32 +1,24 @@
 <?php
-/**
- * +----------------------------------------------------------------------
- * | wmt [ File Description ]
- * +----------------------------------------------------------------------
- * | Copyright (c) 2015~2019 http://www.wmt.ltd All rights reserved.
- * +----------------------------------------------------------------------
- * | 版权所有：贵州鸿宇叁柒柒科技有限公司
- * +----------------------------------------------------------------------
- * | Author: shadow <admin@hongyuvip.com>  QQ: 1527200768
- * +----------------------------------------------------------------------
- * | Version: v1.0.0  Date:2019-05-27 Time:13:25
- * +----------------------------------------------------------------------
- */
 
 return [
+    'path' => resource_path('views'),
+    'excludes' => ['errors', 'vendor'],
     'templates' => [
         'frontend' => [
-            'path_prefix' => 'resources/views/frontend/',
+            'path_prefix' => 'resources/views/frontend',
+            'relative_path_name' => 'frontend',
             'template' => 'default',
             'template_default' => 'default',
         ],
         'backend' => [
-            'path_prefix' => 'resources/views/backend/',
+            'path_prefix' => 'resources/views/backend',
+            'relative_path_name' => 'backend',
             'template' => 'default',
             'template_default' => 'default',
         ],
         'mobile' => [
-            'path_prefix' => 'resources/views/mobile/',
+            'path_prefix' => 'resources/views/mobile',
+            'relative_path_name' => 'mobile',
             'template' => 'default',
             'template_default' => 'default',
         ],
