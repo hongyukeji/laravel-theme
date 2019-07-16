@@ -10,7 +10,7 @@ if (!function_exists('get_template_dir')) {
      * @param array $excludes
      * @return array
      */
-    function get_template_dir($path, array $excludes)
+    function get_template_dir($path, array $excludes = [])
     {
         $template_path = $path;
         $filesystem = new Filesystem();
