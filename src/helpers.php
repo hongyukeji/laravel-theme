@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Filesystem\Filesystem;
+
 if (!function_exists('get_template_dir')) {
     /**
      * 获取给定路径下的所有目录
@@ -10,7 +12,7 @@ if (!function_exists('get_template_dir')) {
      */
     function get_template_dir($path, array $excludes)
     {
-        $template_path = base_path($path);
+        $template_path = $path;
         $filesystem = new Filesystem();
         $directories = $filesystem->directories($template_path);
         foreach ($directories as $key => $directory) {
