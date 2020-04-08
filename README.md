@@ -10,7 +10,7 @@ $ composer require hongyukeji/laravel-theme
 ```
 
 ```shell
-$ php artisan vendor:publish --provider="Hongyukeji\\LaravelTheme\\ThemeServiceProvider"
+$ php artisan vendor:publish --provider="Hongyukeji\LaravelTheme\ThemeServiceProvider"
 ```
 
 ## Usage
