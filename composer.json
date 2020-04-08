@@ -8,7 +8,9 @@
             "email": "admin@hongyuvip.com"
         }
     ],
-    "require": {},
+    "require": {
+        "laravel/helpers": "^1.2"
+    },
     "autoload": {
         "psr-4": {
             "Hongyukeji\\LaravelTheme\\": "src"
