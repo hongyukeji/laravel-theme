@@ -17,16 +17,7 @@ class ThemeServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/themes.php' => config_path('themes.php'),
         ], 'themes_config');
-    }
 
-    /**
-     * Register the application services.
-     *
-     * @return void
-     * @throws \Exception
-     */
-    public function register()
-    {
         $this->mergeConfigFrom(
             __DIR__ . '/../config/themes.php', 'themes'
         );
@@ -44,5 +35,16 @@ class ThemeServiceProvider extends ServiceProvider
         } catch (\Exception $e) {
             throw new \Exception($e->getMessage());
         }
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     * @throws \Exception
+     */
+    public function register()
+    {
+        //
     }
 }
