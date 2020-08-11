@@ -23,10 +23,12 @@ $ php artisan vendor:publish --provider="Hongyukeji\LaravelTheme\ThemeServicePro
 
 ```
 // 1. 在 config/themes.php 中 添加 templates, 如:
-'frontend' => [
-    'path_prefix' => 'resources/views/frontend/',
-    'template' => 'default',
-    'template_default' => 'default',
+'templates' => [
+    'frontend' => [
+        'path' => 'frontend',
+        'template' => 'default',
+        'default' => 'default',
+    ],
 ],
 
 // 2. 在控制器中使用:
@@ -45,9 +47,9 @@ resources/views/frontend/default/index/index.blade.php
 
 ### templates 配置说明
 
-- path_prefix 为每个终端模板目录路径
+- path 为每个终端模板目录路径
 - template 为使用模板的目录
-- template_default 为默认模板目录, 即找不到template模板对应的目录文件, 会自动在该参数定义的目录去查找
+- default 为默认模板目录, 即找不到template模板对应的目录文件, 会自动在该参数定义的目录去查找
 
 ### 助手函数你可能会需要
 
