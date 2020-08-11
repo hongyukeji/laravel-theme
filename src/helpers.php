@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 
 if (!function_exists('get_template_dir')) {
@@ -16,8 +17,8 @@ if (!function_exists('get_template_dir')) {
         $filesystem = new Filesystem();
         $directories = $filesystem->directories($template_path);
         foreach ($directories as $key => $directory) {
-            $directories[$key] = str_after($directory, $template_path . DIRECTORY_SEPARATOR);
-            if (str_contains($directory, $excludes)) {
+            $directories[$key] = Str::after($directory, $template_path . DIRECTORY_SEPARATOR);
+            if (Str::contains($directory, $excludes)) {
                 unset($directories[$key]);
             }
         }
